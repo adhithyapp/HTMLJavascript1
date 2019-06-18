@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+window.onload = function(){
+   document.getElementById('send').onclick = function(e){
+       alert(document.getElementById("name").value);
+       return false;
+   }
+}
+</script>
+</head>
+<body>
+<form name="abcd" method="post">
+<input type="text" name="anykey" id="name" />
+<input type="submit" name="send" id="send" value="Alert" />
+<input type="button" value=" Clear " onclick="form.anykey.value = ''" />
+</form>
+</body>
+</html>
